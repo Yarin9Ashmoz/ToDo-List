@@ -1,0 +1,110 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    direction: ltr;
+    padding: 20px;
+    background-image: url('pexels-cottonbro-3944422.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* גולל את הרקע */
+    justify-items: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    border-radius: 20px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.6); /* רקע כהה להדגיש את הטקסט */
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8); /* רקע חצי שקוף */
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+form input, form select, form textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#taskPriority {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+#taskList {
+    list-style-type: none;
+    width: 50%;
+    border-radius: 10px;
+    
+    padding: 1rem;
+    justify-content: space-around;
+    background-color: rgba(203, 203, 203, 0.8);
+    color: black;
+}
+
+#taskList li {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    border-bottom-style: dotted;
+    border-top-style: dotted;
+    border-color: aliceblue;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#submit {
+    background-color: white;
+    color: black;
+    border: 2px solid #04AA6D;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#submit:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.delete {
+    width: 10%;
+    background-color: rgba(245, 245, 245, 0.872);
+    color: black;
+    border: 2px solid #aa0404;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.delete:hover {
+    background-color: #aa0404;
+    color: rgb(255, 252, 252);
+}
+
+@media (max-width: 800px) {
+    h1, form, #taskList {
+        width: 80%;
+    }
+
+    #taskPriority {
+        width: 80%;
+    }
+}
